@@ -29,3 +29,25 @@ COUNTRY: {country}
 ADDRESS: {city address}
 ZIPCODE: {zipcode}
 """
+while True:
+    last_name = str(input("Enter your last name: "))
+    if last_name.isupper():
+        break
+while True:
+    first_name = str(input("Enter your first name: "))
+    if first_name.islower():
+        break
+while True:
+    country = str(input("Enter your country: "))
+    if len(country) < 4 and country.isalpha():
+        break
+city_address = input("Enter your city address: ")
+while True:
+    zipcode = input("Enter your zipcode: ")
+    if len(zipcode) > 3 and zipcode.isdigit():
+        break
+
+print(f"FOR: {last_name}, {first_name}")
+print(f"COUNTRY: {country}")
+print(f"ADDRESS: {city_address}")
+print(f"ZIPCODE: {zipcode}")
